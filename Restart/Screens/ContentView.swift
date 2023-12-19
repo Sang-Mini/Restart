@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("onboarding") var isOnboardingViewActive: Bool = true
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
